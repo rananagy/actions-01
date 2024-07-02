@@ -6,6 +6,9 @@ jobs:
     first_job: 
         runs-on: ubuntu-latest
         steps: 
+        - name: checkout repo 
+          uses: actions/checkout@v4 
+
         - name: welcome message
           run: echo "my first github actiom"
 
@@ -14,3 +17,4 @@ jobs:
 
         - name: read file
           run: cat README.md
+          
